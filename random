@@ -1,0 +1,25 @@
+namespace random1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random rnd = new Random();
+            int s1 = rnd.Next(1, 36);
+            int s2 = rnd.Next(1, 36);
+            int s3 = rnd.Next(1, 36);
+            int s4 = rnd.Next(1, 36);
+            int s5 = rnd.Next(1, 36);
+            
+
+            //Console.WriteLine("\n1.sayı: {0} \n2.Sayı: {1} \n3.sayı: {2} \n4.sayı: {3} \n5.sayı: {4}",s1,s2,s3,s4,s5);
+
+            Console.WriteLine("1.sayı: " + s1);
+            Console.WriteLine("2.sayı: " + s2);
+            Console.WriteLine("3.sayı: " + s3);
+            Console.WriteLine("4.sayı: " + s4);
+            Console.WriteLine("5.sayı: " + s5);
+            Console.ReadLine();
+        }
+    }
+}
