@@ -1,0 +1,53 @@
+namespace swichCase
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double sayi1, sayi2, sonuc;
+            char secim;
+            Console.Write("1. sayıyı giriniz: ");
+            sayi1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine();
+            Console.Write("2. sayıyı giriniz: ");
+            sayi2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine();
+            Console.WriteLine("Sayıların toplamı için 1'i seçin" );
+            Console.WriteLine();
+            Console.WriteLine("Sayıların farkı için 2'yi seçin");
+            Console.WriteLine();
+            Console.WriteLine("Sayıların çarpımı için 3'ü seçin");
+            Console.WriteLine();
+            Console.WriteLine("Sayıların bölümü için 4'ü seçin");
+            Console.WriteLine();
+
+            secim =Convert.ToChar(Console.ReadLine());
+
+            switch (secim)
+            {
+                case '1':
+                    sonuc = sayi1 + sayi2;
+                    Console.WriteLine("Sayıların toplamı: "+sonuc);
+                    break;
+                case '2':
+                    sonuc = sayi1 - sayi2;
+                    Console.WriteLine("Sayıların farkı: " + sonuc);
+                    break;
+                case '3':
+                    sonuc = sayi1 * sayi2;
+                    Console.WriteLine("Sayıların çarpımı: " + sonuc);
+                    break;
+                case '4':
+                    sonuc = sayi1 / sayi2;
+                    Console.WriteLine("Sayıların bölümü: " + sonuc);
+                    break;
+                default:
+                    {
+                        Console.WriteLine("Hatalı seçim");
+                        break;
+                    }
+            }
+            Console.ReadLine();
+        }
+    }
+}
